@@ -1,0 +1,5 @@
+#DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4"
+
+#DOCKER_OPTS="--dns 131.159.254.1 --dns 131.159.254.2"
+
+sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v /home/zmc/prashant:/notebooks needle

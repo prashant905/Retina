@@ -1,0 +1,5 @@
+python keras_retinanet/bin/evaluate.py --save-path /notebooks/keras-retinanet/test  --max-detections 1 --score-threshold 0.50 csv /notebooks/inditest.csv /notebooks/id.csv  /notebooks/keras-retinanet/snapshot/resnet18_csv_50.h5 
+
+python keras_retinanet/bin/train.py --snapshot /notebooks/keras-retinanet/snapshots/resnet50_csv_30.h5 --batch-size 1 --steps 4000 --epochs 20 csv /notebooks/test_complete2.csv /notebooks/id.csv
+
+python keras_retinanet/bin/train.py --batch-size 1 --no-weights --steps 4000 --epochs 50 csv /notebooks/train.csv /notebooks/id.csv
